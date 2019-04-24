@@ -29,8 +29,12 @@ describe("String Calc Kata", function() {
 		expect(stringCalc.add("1")).toEqual(1);
 	});
 
-	it("Should return value of single number", function() {
+	it("Should return sum of two numbers", function() {
 		expect(stringCalc.add("1,2")).toEqual(3);
+	});
+
+	it("Should return sum of three numbers", function() {
+		expect(stringCalc.add("1,2,3")).toEqual(6);
 	});
 });
 
